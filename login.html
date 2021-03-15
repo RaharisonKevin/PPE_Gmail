@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail page de connexion</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img class="logo" src="./asset/mail.png" alt="gmail logo"></li> 
+                <li>Gmail</li>
+            </ul>
+            <ul>
+                <li><a href="#" aria-current="false">POUR LES PROS</a></li>
+                <li><a href="#login" aria-current="true" role="button">CONNEXION</a> </li>
+                <li><a href="#sign" aria-current="false" >CRÉER UN COMPTE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="loginform">
+            <h1 class="welcome">Bienvenue dans votre espace</h1>
+            <fieldset>     
+                <legend>Connectez-vous à votre compte</legend>
+
+            <form action="" method="post">
+                
+                <label for="email">Mail ou login *</label>
+                <input type="email" id="email" name="mail" placeholder="Votre mail" aria-required="true">
+              
+                <label for="password">Mot de passe *</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" aria-required="true">
+              
+               <input type="submit" value="CONNEXION À VOTRE COMPTE">
+              </form>
+
+            </fieldset> 
+        </section>
+
+    </main>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

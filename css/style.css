@@ -1,0 +1,226 @@
+/*reset*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    }
+
+    *{
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+     }
+                   
+    body{
+        font:1.6rem 'Open Sans', sans-serif;
+        margin:0;
+        padding:0;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        outline: solid 0.1rem transparent;
+    }
+                                        
+    h1,ul,li, h2, h3, span, p, img{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        color: #222;
+        text-decoration: none;
+    }
+    
+/*theme*/
+
+header{
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#fff;
+}
+header > nav{
+    display: flex;
+    height: 6vh;
+    box-shadow: 0 0 0.5rem 0 #5C5252;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: #fff;
+}
+header nav ul {
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+header nav ul li{
+  
+    font-size: 1.3rem;
+}
+header nav ul:first-child{
+    width: 10%;
+}
+header nav ul:first-child li{
+    padding: 0 0.5rem;
+}
+header nav ul:nth-child(2){
+    display: inline-flex;
+    width: 90%;
+    justify-content: flex-end;
+} 
+header nav ul li a{
+    width: 100%;
+    height: 100%;
+    line-height: 2;
+    padding:1.5rem 1.5rem;
+}
+header nav ul li a[role="button"]{
+    background-color: #912215;
+    color: #fff;
+}
+#sign{
+    width: auto;
+    height: 100vh;
+    background: url(../asset/home-hero.jpg) no-repeat fixed center center / cover;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    z-index: -1;
+}
+#sign  h1{
+    max-width: 55rem;
+    color: #fff;
+    font-weight: 5;
+    font-size: 4.5rem;
+    margin-left: 10rem;
+    padding-bottom: 8rem;
+}
+#sign > .btnlogin{
+    display: block;
+    max-width: 19rem;
+    margin-left: 10rem;
+    margin-top: -4rem;
+    padding: 1.5rem 1rem;
+    background-color: #912215;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    z-index: 2;
+}
+.btnarrow{
+    background-color: #912215;
+    padding: 1rem;
+    border-radius: 50%;
+    float: inline-end;
+    margin-right: 3rem;
+}
+#sign > img{
+    background-color:#912215;
+    max-width: 7rem;
+    border-radius: 50%;
+}
+#login{
+    margin: 0 auto;
+    height: 33vh;
+    width: auto;
+    text-align: center;
+    max-width: 40rem;
+    padding-top: 6.0rem;
+}
+#login > h2{
+    font-size: 3rem;
+    font-weight: 100;
+}
+#login p{
+    margin-top: 1.5%;
+    line-height: 2.2rem;
+}
+.btnarrow{
+    background-color: #912215;
+    box-shadow: 0 1rem 1rem #222;
+    cursor: pointer;
+    position: fixed;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    border-radius: 80%;
+    bottom: 5%;
+    right: 1%;
+    padding: 1rem;
+}
+#form{
+    max-width: 80rem;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 2rem;
+}
+fieldset{
+    border: solid #5C5252;
+    border-width: 0.15rem;
+    border-radius: 1rem;
+}
+legend{
+    font-size: 2.6rem;
+    font-weight: 100;
+    letter-spacing: 0.05rem;
+    padding: 0 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+label{
+    padding: 1rem 0;
+}
+input{
+
+    padding: 1.5rem 0.7rem;
+    border: solid transparent;
+    background-color: #ececec;
+    font-size: 2rem;
+    color: #333333;
+    outline: none;
+}
+input:focus{
+    box-shadow: 0 0 0.7rem 0 #912215;
+}
+input:last-child{
+    margin: 1.0rem auto;
+    padding: 1.5rem 6rem;
+    outline: none;
+    background-color: #1050a4;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#loginform{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+.welcome{
+   text-align: center;
+   padding-bottom: 3rem;
+   font-size: 3rem;
+   font-weight: 100;
+}
+.warning{
+    background-color:#912215;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.0rem 1.0rem;
+    color: #FFF;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+footer{
+    height: 30vh;
+}
