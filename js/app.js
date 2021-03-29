@@ -3,11 +3,9 @@ document.addEventListener('DOMContentLoaded', (e)=>{
      console.log("loaded")
       const linkList = document.querySelectorAll("header nav ul:nth-child(2) li a");
       const submitBtn = document.getElementsByTagName("input")[4]
-  
-      //create virtual element warning 
-  
-      let parent = document.querySelector("#form");
+    
       let element = document.createElement('p')
+      let parent = document.querySelector("#form");
       parent.prepend(element)
   
       const User = ({
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', (e)=>{
               }
             }
       })
-  
   
       submitBtn.addEventListener("click", (e)=> {
           e.preventDefault()
